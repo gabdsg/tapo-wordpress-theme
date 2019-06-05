@@ -31,24 +31,16 @@
 	<?php else : ?>
 
 		<div class="post-item">
+			<a href="<?php echo esc_url( get_permalink() ); ?>">
 			
-			<a class="thumbnail-container" href="<?php echo esc_url( get_permalink() ); ?>">
-				<div class="thumbnail">
-					<?php talkingpoints_post_thumbnail(); ?>
+				<?php talkingpoints_post_thumbnail(); ?>
+				
+				<div class="post-info">
+					<?php the_title( '<h4>', '</h4>' ); ?>
+					<?php talkingpoints_posted_on(); ?>
+					<?php the_excerpt(); ?>
 				</div>
 			</a>
-			
-			<div class="post-info">
-				<a href="<?php echo esc_url( get_permalink() ); ?>">
-					<?php the_title( '<h4>', '</h4>' ); ?>
-				</a>
-				<?php talkingpoints_posted_on(); ?>
-				<?php the_excerpt(); ?>
-				<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more">
-					Read more here
-				</a>
-			</div>
-	
 		</div>
 
 	<?php endif; ?>

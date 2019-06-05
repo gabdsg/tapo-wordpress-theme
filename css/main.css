@@ -37,9 +37,6 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
-a {
-  color: #216ab9;
-}
 .navbar-nav .nav-link {
   text-transform: uppercase;
   font-size: 0.9em;
@@ -259,9 +256,7 @@ footer.site-footer .footer-navigation ul.sub-menu {
   padding: 50px 10px;
 }
 .archive-container .post {
-  margin: 0 0 30px 0;
-  padding: 0 0 30px 0;
-  border-bottom: 5px solid #f7f5f5;
+  margin: 10px 0;
 }
 article.post h1.entry-title,
 article.news h1.entry-title {
@@ -310,72 +305,63 @@ article.news .entry-content {
 .recent-posts-container {
   margin: 10px -15px;
 }
-.post-item {
+.post-item a {
   color: #4d4d4d;
   text-decoration: none;
   display: flex;
+  background: white;
+  border: 1px solid #eaeaea;
   padding: 10px;
   margin: 5px;
+  height: 220px;
   overflow: hidden;
   border-radius: 5px;
 }
-@media (max-width: 800px) {
-  .post-item {
-    flex-direction: column;
-  }
-}
-.post-item:hover {
+.post-item a:hover {
+  border: 1px solid #d1d1d1;
   color: black;
 }
-.post-item .thumbnail-container {
-  width: 50%;
-  flex: 1;
-}
-@media (max-width: 800px) {
-  .post-item .thumbnail-container {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-.post-item .thumbnail-container .thumbnail {
-  position: relative;
-  width: 100%;
-  padding-top: 70%;
-}
-.post-item .thumbnail-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.post-item .post-info {
-  padding-left: 20px;
+.post-item a .post-info {
+  padding-left: 10px;
   position: relative;
   overflow: hidden;
-  width: 50%;
-  flex: 1;
+  height: 200px;
 }
-@media (max-width: 800px) {
-  .post-item .post-info {
-    width: 100%;
+.post-item a .post-info::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+}
+.post-item a h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.post-item a p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.post-item a img {
+  flex: none;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  .post-item a img {
+    width: 100px;
   }
 }
-.post-item .post-info h4 {
-  font-size: 1.2rem;
-  margin: 0 0 10px 0;
-}
-.post-item .post-info p {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 0 0 10px 0;
-}
-.post-item .post-info .posted-on {
-  font-size: 0.9rem;
-  font-style: italic;
+.post-item .posted-on {
+  font-size: 0.8rem;
   color: #636363;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
 }
 .archive-header {
