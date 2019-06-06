@@ -32,7 +32,7 @@ get_header();
 								$args = array( 'numberposts' => 2, 'category' => $catId, 'post__not_in' => array( $post->ID ) );
 								$recent_posts = wp_get_recent_posts($args);
 								foreach( $recent_posts as $recent ): ?>
-									<div class="post-item col-lg-6">
+									<div class="recent-post-item col-lg-6">
 										<a href="<?php echo get_permalink($recent["ID"]); ?>">
 										
 											<?php echo get_the_post_thumbnail($recent["ID"], "medium"); ?>

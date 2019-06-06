@@ -34,13 +34,6 @@ get_header();
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -62,7 +55,7 @@ get_header();
 					array(
 						'prev_text'          => __( '< Older posts' ),
 						'next_text'          => __( 'Newer posts >' ),
-						'screen_reader_text' => __( 'Posts navigation' ),
+						'screen_reader_text' => __( ' ' ),
 					)
 				);
 				the_posts_navigation($args);

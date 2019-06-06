@@ -40,7 +40,7 @@
         array(
             'prev_text'          => __( '< Older posts' ),
             'next_text'          => __( 'Newer posts >' ),
-            'screen_reader_text' => __( 'Posts navigation' ),
+            'screen_reader_text' => __( ' ' ),
         )
     );
     the_posts_navigation($args);
