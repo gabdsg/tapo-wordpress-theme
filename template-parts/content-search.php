@@ -11,17 +11,25 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="post-item">
-			<a href="<?php echo esc_url( get_permalink() ); ?>">
+	<div class="post-item">
 			
-				<?php talkingpoints_post_thumbnail(); ?>
-				
-				<div class="post-info">
-					<?php the_title( '<h4>', '</h4>' ); ?>
-					<?php talkingpoints_posted_on(); ?>
-					<?php the_excerpt(); ?>
+			<a class="thumbnail-container" href="<?php echo esc_url( get_permalink() ); ?>">
+				<div class="thumbnail <?php if (get_post_type() == 'news') { echo "small"; } ?>">
+					<?php talkingpoints_post_thumbnail(); ?>
 				</div>
 			</a>
+			
+			<div class="post-info">
+				<a href="<?php echo esc_url( get_permalink() ); ?>">
+					<?php the_title( '<h4>', '</h4>' ); ?>
+				</a>
+				<?php talkingpoints_posted_on(); ?>
+				<?php the_excerpt(); ?>
+				<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more">
+					Read more here
+				</a>
+			</div>
+	
 		</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

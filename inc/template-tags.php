@@ -129,7 +129,7 @@ if ( ! function_exists( 'talkingpoints_post_thumbnail' ) ) :
 
 
 				<?php
-				the_post_thumbnail( 'medium', array(
+				the_post_thumbnail( 'large', array(
 					'alt' => the_title_attribute( array(
 						'echo' => false,
 					) ),

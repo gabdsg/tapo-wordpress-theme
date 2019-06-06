@@ -258,7 +258,8 @@ footer.site-footer .footer-navigation ul.sub-menu {
 .archive-container {
   padding: 50px 10px;
 }
-.archive-container .post {
+.archive-container .post,
+.archive-container .news {
   margin: 0 0 30px 0;
   padding: 0 0 30px 0;
   border-bottom: 5px solid #f7f5f5;
@@ -329,13 +330,19 @@ article.news .entry-content {
   width: 100%;
   padding-top: 70%;
 }
-.post-item .thumbnail-container img {
+.post-item .thumbnail-container .thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+}
+.post-item .thumbnail-container .thumbnail.small {
+  background: #ececec;
+}
+.post-item .thumbnail-container .thumbnail.small img {
+  object-fit: none;
 }
 .post-item .post-info {
   padding-left: 20px;
@@ -384,6 +391,12 @@ article.news .entry-content {
   overflow: hidden;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .recent-posts .recent-post-item a {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .recent-posts .recent-post-item a:hover {
   border: 1px solid #d1d1d1;
   color: black;
@@ -393,6 +406,12 @@ article.news .entry-content {
   position: relative;
   overflow: hidden;
   height: 200px;
+}
+@media (max-width: 768px) {
+  .recent-posts .recent-post-item a .post-info {
+    height: auto;
+    max-height: 200px;
+  }
 }
 .recent-posts .recent-post-item a .post-info::after {
   content: "";
@@ -407,11 +426,16 @@ article.news .entry-content {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
 }
 .recent-posts .recent-post-item a h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: #636363;
-  padding: 0 8px;
-  margin: 10px 0;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+@media (max-width: 1200px) {
+  .recent-posts .recent-post-item a h4 {
+    font-size: 1rem;
+  }
 }
 .recent-posts .recent-post-item a p {
   font-size: 0.8rem;
@@ -423,9 +447,10 @@ article.news .entry-content {
   height: 200px;
   object-fit: cover;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .recent-posts .recent-post-item a img {
-    width: 100px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 .recent-posts .recent-post-item .posted-on {
