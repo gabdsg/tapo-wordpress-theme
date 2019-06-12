@@ -580,3 +580,6 @@ article.news .entry-content {
 .quote-bubble-dark .elementor-testimonial-content:after {
   border-color: transparent transparent transparent #0d8ab9;
 }
+.category-blog .elementor-text-editor p {
+  margin-bottom: 2.5rem;
+}
