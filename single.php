@@ -29,7 +29,12 @@ get_header();
 						<div class="recent-posts-container row">
 							<?php
 								$catId = get_the_category()[0]->term_id;
-								$args = array( 'numberposts' => 2, 'category' => $catId, 'post__not_in' => array( $post->ID ) );
+								$args = array( 
+									'post_status' => 'publish',
+									'numberposts' => 2, 
+									'category' => $catId, 
+									'post__not_in' => array( $post->ID )
+								);
 								$recent_posts = wp_get_recent_posts($args);
 								foreach( $recent_posts as $recent ): ?>
 									<div class="recent-post-item col-lg-6">
