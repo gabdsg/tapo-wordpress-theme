@@ -126,6 +126,16 @@ function talkingpoints_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => esc_html__( 'Banner', 'talkingpoints' ),
+		'id'            => 'banner',
+		'description'   => esc_html__( 'Add widgets here.', 'talkingpoints' ),
+		'before_widget' => '<div class="top-banner">',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
 }
 add_action( 'widgets_init', 'talkingpoints_widgets_init' );
 

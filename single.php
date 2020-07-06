@@ -22,7 +22,7 @@ get_header();
 			?>
 
 
-			<?php if (get_post_type() == 'post' && get_post_status() == 'publish'): ?>
+			<?php if (get_post_type() == 'post'): ?>
 				<div class="recent-posts">
 					<div class="container">
 						<h4 class="title">Recent Posts</h4>

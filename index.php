@@ -25,7 +25,7 @@ get_header();
 
 			<header class="archive-header" style="background-image: url(<?php echo $src ?>); background-color: #00599b">
 				<div class="container">
-					<h1 class="page-title">TalkingPoints Comunity</h1>
+					<h1 class="page-title">TalkingPoints Community</h1>
 				</div>
 			</header>
 

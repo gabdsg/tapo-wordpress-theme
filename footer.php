@@ -30,7 +30,7 @@
 		</div>
 		<div class="site-info">
 			<div class="container">
-				Copyrighted ©2015 TalklingPoints. All Rights Reserved. TalkingPoints is a 501c3 non-profit organization. · <a href="<?php echo wp_get_upload_dir()["baseurl"] ?>/pdfs/TalkingPoints-Terms-of-Service-08-15-17.pdf" target="_blank">Terms of Service</a> · <a href="<?php echo wp_get_upload_dir()["baseurl"] ?>/pdfs/TalkingPoints-Privacy-Policy-08-15-2017.pdf" target="_blank">Privacy Policy</a>
+				Copyrighted ©2015 TalklingPoints. All Rights Reserved. TalkingPoints is a 501c3 non-profit organization. · <a href="https://talkingpts.org/terms-of-service/">Terms of Service</a> · <a href="https://talkingpts.org/privacy-policy-2020/">Privacy Policy</a>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

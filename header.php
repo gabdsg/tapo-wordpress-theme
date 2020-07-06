@@ -18,9 +18,20 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	
+	<script>
+		window.OFID = "5ee95fc7ae2a9020215afdc1";
+		(function(){
+		var script = document.createElement('script');
+		var url = 'https://cdn.outfunnel.com/c.js?v='+ new Date().toISOString().substring(0,10)
+		script.setAttribute('src', url);
+		document.getElementsByTagName('head')[0].appendChild(script);
+		})();
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
+<?php dynamic_sidebar( 'banner' ); ?>
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
