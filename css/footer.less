@@ -1,6 +1,8 @@
 footer.site-footer {
-	background-color: #00599b;
+	background-color: #429BD7;
 	padding: 0;
+	color: white;
+	font-size: 14px;
 
 	.site-info {
 		font-size: 12px;
@@ -15,81 +17,97 @@ footer.site-footer {
 	}
 	.footer-flex-container {
 		padding: 80px 20px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 0 26px;
 
 		@media (max-width: 992px) {
-			flex-direction: column;
+			grid-template-columns: 1fr;
+			grid-gap: 26px 0;
 		}
 
 		.footer-widget {
-			flex: 1;
-
 			h4.widget-title {
 				color: white;
 				font-size: 16px;
 				margin: 2px 0 2px 0;
 				font-weight: 400;
 			}
+	
+
 		}
 	}
 
 	.footer-navigation {
-		width: 50%;
-		@media (max-width: 992px) {
-			width: 100%;
-		}
-		ul.menu {
+
+		.menu-footer-container{
 			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			padding: 0 70px 0 0;
-			margin: 0;
-			list-style: none;
-			justify-content: space-between;
-
-			@media (max-width: 992px) {
+			justify-content: flex-end;
+		
+	
+			ul.menu {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
 				padding: 0;
-			}
+				margin: 0;
+				list-style: none;
+				justify-content: space-between;
 
-			> li {
-				padding: 0;
-				> a {
-					text-decoration: none;
-					color: white;
-					cursor: default;
-					pointer-events: none;
-					font-size: 18px;
-					margin-bottom: 5px;
-					display: block;
-					@media (max-width: 992px) {
-						border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-						padding: 0 10px 5px 10px;
+				width: 500px;
+
+				@media (max-width: 992px) {
+					padding: 0;
+					width: 100%;
+				}
+
+				> li {
+					padding: 0;
+					> a {
+						text-decoration: none;
+						color: white;
+						cursor: default;
+						pointer-events: none;
+						font-weight: 500;
+						font-size: 14px;
+						text-transform: uppercase;
+						margin-bottom: 12px;
+						display: block;
+						@media (max-width: 992px) {
+							border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+							padding: 0 10px 5px 10px;
+						}
 					}
 				}
-			}
 
-			a {
-				color: rgba(255, 255, 255, 0.8);
-				font-size: 16px;
-			}
-		}
+				a {
+					color: white;
+					font-size: 15px;
+				}
 
-		@media (max-width: 992px) {
-			ul.menu {
-				flex-direction: column;
-				> li {
-					padding: 0 0 30px 0;
+
+				@media (max-width: 992px) {
+	
+					flex-direction: column;
+					> li {
+						padding: 0;
+					}
+					
 				}
 			}
+
 		}
+	
 
 		ul.sub-menu {
 			padding: 0;
 			margin: 0;
 			list-style: none;
 			> li {
+				&:not(:last-child){
+					margin-bottom: 8px;
+				}
 				a {
 					@media (max-width: 992px) {
 						padding: 10px;
