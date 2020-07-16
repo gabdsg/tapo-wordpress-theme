@@ -19,6 +19,8 @@
 
 	<?php wp_head(); ?>
 	
+	<script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+	
 	<script>
 		window.OFID = "5ee95fc7ae2a9020215afdc1";
 		(function(){
