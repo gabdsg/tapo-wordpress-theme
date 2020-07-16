@@ -412,11 +412,19 @@ article.news {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
 
         height: 240px;
         margin: 0 15px;
 
         padding: 24px;
+      }
+
+      .cover {
+        margin: -24px -24px 24px -24px;
+        height: 100px;
+        object-fit: cover;
+        background: red;
       }
 
       .title {
@@ -425,6 +433,10 @@ article.news {
         font-weight: bold;
         margin-bottom: 8px;
         flex-grow: 0;
+
+        &.big {
+          font-size: 24px;
+        }
       }
 
       .text {
@@ -433,6 +445,21 @@ article.news {
         flex-grow: 1;
         overflow-y: auto;
         margin-bottom: 16px;
+      }
+
+      .read-more {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        
+        text-decoration: none;
+
+        color: #429bd7;
       }
 
       .person {
@@ -458,6 +485,7 @@ article.news {
             position: absolute;
             top: -10px;
             right: 10px;
+            filter: hue-rotate(90deg);
           }
         }
 
