@@ -819,7 +819,6 @@ article.news .entry-content {
   background: #2882be;
 }
 
-
 .donate-card {
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -827,6 +826,8 @@ article.news .entry-content {
   border-radius: 10px;
   padding: 24px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 .donate-card .description {
   font-weight: normal;
