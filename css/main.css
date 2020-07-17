@@ -735,9 +735,6 @@ article.news .entry-content {
 }
 
 
-body {
-  box-sizing: border-box;
-}
 .quotes-carousel .siema {
   box-sizing: border-box;
   margin: 0 -15px;
@@ -756,7 +753,7 @@ body {
   border: 1px solid #eeeeee;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  height: 320px;
+  height: 444px;
   margin: 0 15px;
   padding: 60px;
   position: relative;
@@ -772,14 +769,17 @@ body {
 }
 .quotes-carousel .siema .item .image {
   grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .quotes-carousel .siema .item .image img {
-  height: 470px;
   margin: -80px 0;
 }
 .quotes-carousel .siema .item .text {
   grid-area: text;
   font-size: 24px;
+  line-height: 34px;
   color: #616161;
   flex-grow: 1;
   overflow-y: auto;
