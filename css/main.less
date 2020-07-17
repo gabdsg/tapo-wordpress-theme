@@ -360,7 +360,9 @@ article.news {
 	margin-bottom: 2.5rem;
 }
 
-
+body {
+  box-sizing: border-box;
+}
 .custom-slider {
   .header {
     display: flex;
@@ -398,6 +400,12 @@ article.news {
       }
     }
   }
+  
+  &.medium{
+    .siema .item .content{
+      height: 370px;
+    }
+  }
 
   .siema {
     box-sizing: border-box;
@@ -422,9 +430,9 @@ article.news {
 
       .cover {
         margin: -24px -24px 24px -24px;
-        height: 100px;
+        height: 150px;
+        max-width: inherit;
         object-fit: cover;
-        background: red;
       }
 
       .title {
