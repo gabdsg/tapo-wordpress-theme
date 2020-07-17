@@ -818,3 +818,37 @@ article.news .entry-content {
 .quotes-carousel .siema .item .actions .slider-button:hover {
   background: #2882be;
 }
+
+
+.donate-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 24px;
+  cursor: pointer;
+}
+.donate-card .description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #616161;
+}
+.donate-card .amount {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #0a2739;
+}
+.donate-card:hover {
+  background: #e6f6fb;
+  /* Brand / Lighter Blue #429BD7 */
+  border: 1px solid #429bd7;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+.donate-card:hover .amount {
+  color: #429bd7;
+}
