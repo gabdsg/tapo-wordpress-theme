@@ -828,6 +828,11 @@ article.news .entry-content {
   cursor: pointer;
   display: block;
   text-decoration: none;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .donate-card .description {
   font-weight: normal;
