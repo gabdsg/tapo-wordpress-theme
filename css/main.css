@@ -587,7 +587,6 @@ article.news .entry-content {
   margin-bottom: 2.5rem;
 }
 
-
 .custom-slider .header {
   display: -webkit-box;
   display: flex;
@@ -625,6 +624,9 @@ article.news .entry-content {
 .custom-slider .header .slider-button:hover {
   background: #2882be;
 }
+.custom-slider.medium .siema .item .content {
+  height: 370px;
+}
 .custom-slider .siema {
   box-sizing: border-box;
   margin: 0 -15px;
@@ -647,10 +649,10 @@ article.news .entry-content {
 }
 .custom-slider .siema .item .cover {
   margin: -24px -24px 24px -24px;
-  height: 100px;
+  height: 150px;
+  max-width: inherit;
   -o-object-fit: cover;
      object-fit: cover;
-  background: red;
 }
 .custom-slider .siema .item .title {
   font-size: 16px;
