@@ -20,6 +20,7 @@
 	<?php wp_head(); ?>
 	
 	<script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clamp-js/0.7.0/clamp.min.js"></script>
 	
 	<script>
 		window.OFID = "5ee95fc7ae2a9020215afdc1";

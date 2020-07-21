@@ -330,6 +330,20 @@ function news_date_customfield( $meta_boxes ) {
 		'autosave' => 'false',
 		'fields' => array(
 			array(
+				'id' => $prefix . 'page',
+				'type' => 'string',
+				'name' => esc_html__( 'Page', 'talkingpoints' ),
+				'std' => 'Page name',
+				'size' => 80,
+			),
+			array(
+				'id' => $prefix . 'color',
+				'type' => 'color',
+				'name' => esc_html__( 'Color', 'talkingpoints' ),
+				'std' => 'Page name color',
+				'size' => 7,
+			),
+			array(
 				'id' => $prefix . 'date',
 				'type' => 'date',
 				'name' => esc_html__( 'Date', 'talkingpoints' ),
