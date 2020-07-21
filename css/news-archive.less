@@ -60,9 +60,22 @@
 	&.news-archive-list-grid{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	
+		@media screen and (max-width: 992px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
 		
 		.archive-news-list-item:nth-child(1), .archive-news-list-item:nth-child(2){
 			grid-column: auto / span 2;
+
+			@media screen and (max-width: 768px) {
+				grid-column: auto;
+			}
 		}
 	}
 }
