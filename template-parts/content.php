@@ -44,9 +44,7 @@
 				</a>
 				<?php talkingpoints_posted_on(); ?>
 				<?php the_excerpt(); ?>
-				<a href="<?php echo esc_url( get_permalink() ); ?>" class="read-more">
-					Read more here
-				</a>
+		
 			</div>
 	
 		</div>

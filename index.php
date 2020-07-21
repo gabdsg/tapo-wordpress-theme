@@ -15,19 +15,31 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+
+<?php
+		$src = get_template_directory_uri() . "/img/blog-header.png";
+	?>
+
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<h1 class="title">TalkingPoints blog</h1>
+					<p class="text">Learn how teachers are using TalkingPoints to connect with families outside the classroom, across language barriers, and much more. </p>
+					<a href="#" class="btn btn-primary btn-rounded btn-uppercased">Contact us</a>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<img class="img-fluid" src="<?php echo $src ?>" alt="News">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="primary" class="content-area bg-gray">
 		<main id="main" class="site-main">
 
 
-			<?php
-				$src = get_template_directory_uri() . "/img/tapo-blog-bg.jpg";
-			?>
-
-			<header class="archive-header" style="background-image: url(<?php echo $src ?>); background-color: #00599b">
-				<div class="container">
-					<h1 class="page-title">TalkingPoints Community</h1>
-				</div>
-			</header>
+	
 
 			<div class="container archive-container">
 
@@ -73,6 +85,20 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<script>
+	document.querySelectorAll(".post-info h4").forEach((e)=>{
+		$clamp(e, {clamp: 2});
+	});
+
+	document.querySelectorAll(".post-info p").forEach((e)=>{
+		$clamp(e, {clamp: 6});
+	});
+	
+</script>
+
 <?php
 //get_sidebar();
 get_footer();
+?>
+
+

@@ -4,7 +4,7 @@
 		$src = get_template_directory_uri() . "/img/news-header.png";
 	?>
 
-	<div class="header">
+	<div class="page-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
