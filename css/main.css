@@ -922,7 +922,7 @@ body {
   text-transform: inherit;
 }
 .archive-container .post-item .post-info h4 {
-  font-size: 24px;
+  font-size: 32px;
   color: #080808;
   font-weight: 500;
   text-transform: inherit;
@@ -952,6 +952,9 @@ body {
   .archive-container .post-item .post-info {
     width: 100%;
   }
+  .archive-container .post-item .post-info h4 {
+    font-size: 24px;
+  }
 }
 .archive-container > :not(:first-child) .post-item {
   flex-direction: column;
@@ -963,6 +966,9 @@ body {
 }
 .archive-container > :not(:first-child) .post-item .post-info {
   width: 100%;
+}
+.archive-container > :not(:first-child) .post-item .post-info h4 {
+  font-size: 24px;
 }
 .bg-gray {
   background: #F3F5F9;
