@@ -641,6 +641,7 @@ body {
 	}
 
 
+
 	.post-item {
 		background: #FFFFFF;
 		border: 1px solid #EEEEEE;
@@ -648,6 +649,7 @@ body {
 		display: flex;
 		margin: 16px;
 		height: 340px;
+		overflow: hidden;
 	
 		@media (max-width: 768px) {
 			flex-direction: column;
@@ -661,6 +663,8 @@ body {
 		&:hover {
 			color: black;
 		}
+
+		
 	
 		.thumbnail-container {
 			width: 50%;
@@ -731,6 +735,36 @@ body {
 			}
 		}
 	}
+
+
+	@media screen and (max-width: 992px) {
+		.post-item{
+		   flex-direction: column;
+		   height: 500px;
+		   .thumbnail-container{
+			   width: 100%;
+			   height: 170px;
+		   }
+
+		   .post-info{
+			   width: 100%;
+		   }
+		}
+   }
+
+   >:not(:first-child) .post-item{
+	   flex-direction: column;
+	   height: 500px;
+	   .thumbnail-container{
+		   width: 100%;
+		   height: 170px;
+	   }
+
+	   .post-info{
+		   width: 100%;
+	   }
+   }
+
 	
 }
 
