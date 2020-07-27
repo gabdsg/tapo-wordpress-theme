@@ -973,3 +973,15 @@ body {
 .bg-gray {
   background: #F3F5F9;
 }
+.uael-content {
+  border-radius: 16px;
+}
+.uael-close-custom-popup-top-right {
+  right: 8px;
+  top: 8px;
+  bottom: auto !important;
+  left: auto !important;
+}
+.uael-modal-close i {
+  color: #5a5a5a !important;
+}
