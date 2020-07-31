@@ -1043,8 +1043,8 @@ body {
   letter-spacing: 0.05em;
   padding: 10px 20px;
 }
-.current-menu-parent > a,
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar .current-menu-parent > a,
+.navbar .navbar-light .navbar-nav .active > .nav-link {
   color: rgba(0, 0, 0, 0.9) !important;
   font-weight: bold;
 }
