@@ -14,34 +14,35 @@ a {
   margin-bottom: 10px;
 }
 .navbar-nav .sign-up-button a.nav-link {
-  border: 2px solid #00a2df;
+  border: 2px solid #429BD7;
   border-radius: 50px;
   padding: 6px 20px;
   color: white;
-  background: #00a2df;
+  background: #429BD7;
   transition: all 0.3s;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .navbar-nav .sign-up-button a.nav-link:hover {
-  border: 2px solid #00a2df;
+  border: 2px solid #3678AF;
   color: white;
-  background: #00a2df;
+  background: #3678AF;
 }
 .navbar-nav .sign-in-button a.nav-link {
-  border: 2px solid #00a2df;
+  border: 2px solid #429BD7;
   border-radius: 50px;
   padding: 6px 20px;
-  color: #00a2df;
+  color: #429BD7;
   transition: all 0.3s;
   text-align: center;
   text-transform: uppercase;
   margin-left: 3rem!important;
+  letter-spacing: 0.05em;
 }
 .navbar-nav .sign-in-button a.nav-link:hover {
-  border: 2px solid #00a2df;
-  color: white;
-  background: #00a2df;
+  border: 2px solid #3678AF;
+  color: #3678AF;
 }
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-nav .nav-link {
