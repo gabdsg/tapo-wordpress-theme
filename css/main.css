@@ -581,7 +581,7 @@ body {
   border-radius: 100px;
 }
 .custom-slider .header .slider-button:hover {
-  background: #2882be;
+  background: #3678AF;
 }
 .custom-slider.medium .siema .item .content {
   height: 370px;
@@ -984,4 +984,87 @@ body {
 }
 .uael-modal-close i {
   color: #5a5a5a !important;
+}
+.category-blog .elementor-text-editor p {
+  margin-bottom: 2.5rem;
+}
+.top-banner {
+  display: block;
+  background: #2C588C;
+  z-index: 999;
+}
+.reversed-list .elementor-icon-list-item a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between !important;
+  color: #080808;
+}
+.reversed-list .elementor-icon-list-item a.view-all {
+  color: #429BD7;
+  flex-direction: row;
+}
+.reversed-list .elementor-icon-list-item a.view-all .elementor-icon-list-icon {
+  display: none;
+}
+.eael-data-table tbody tr td {
+  font-family: inherit !important;
+}
+.position-row {
+  font-weight: 400 !important;
+  color: #616161 !important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.image-cover {
+  height: 100%;
+}
+.image-cover .elementor-widget-image {
+  height: 100%;
+}
+.image-cover .elementor-widget-container {
+  height: 100%;
+}
+.image-cover .elementor-image {
+  height: 100%;
+}
+.image-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+.btn.btn-primary.btn-rounded.btn-uppercased {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 10px 20px;
+}
+.current-menu-parent > a,
+.navbar-light .navbar-nav .active > .nav-link {
+  color: rgba(0, 0, 0, 0.9) !important;
+  font-weight: bold;
+}
+.dropdown-menu.show {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+}
+.dropdown-menu.show .dropdown-item {
+  padding: 10px 24px;
+  color: #080808;
+}
+.dropdown-menu.show .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #E0E0E0;
+}
+.dropdown-menu.show .dropdown-item:focus,
+.dropdown-menu.show .dropdown-item:hover {
+  color: #3a3a3a;
+  background: none;
+}
+.dropdown-menu.show .dropdown-item.active,
+.dropdown-menu.show .dropdown-item:active {
+  color: #429BD7;
+  background: none !important;
 }
