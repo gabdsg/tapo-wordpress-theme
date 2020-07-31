@@ -10,7 +10,6 @@
 				<div class="col-md-6 col-xs-12">
 					<h1 class="title">News</h1>
 					<p class="text">Read about TalkingPoints in the news. We don't like to toot our own horn, but love it when others do.</p>
-					<a href="#" class="btn btn-primary btn-rounded btn-uppercased">Contact us</a>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<img class="img-fluid" src="<?php echo $src ?>" alt="News">
