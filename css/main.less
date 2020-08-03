@@ -388,9 +388,13 @@ body {
         display: grid;
         grid-template-columns: 72px auto;
         grid-template-rows: auto auto;
-        gap: 1px 1px;
+        gap: 0 0;
         grid-template-areas: "avatar name" "avatar role";
-        flex-grow: 0;
+		flex-grow: 0;
+		
+		&.simple{
+			grid-template-columns: 0 auto;
+		}
 
         .avatar {
           grid-area: avatar;
