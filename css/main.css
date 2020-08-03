@@ -142,6 +142,7 @@ footer.site-footer .footer-flex-container .footer-widget h4.widget-title {
 footer.site-footer .footer-navigation .menu-footer-container {
   display: flex;
   justify-content: flex-end;
+  padding: 12px 0;
 }
 footer.site-footer .footer-navigation .menu-footer-container ul.menu {
   display: flex;
@@ -641,6 +642,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #429bd7;
+}
+.custom-slider .siema .item .read-more i {
+  margin-left: 8px;
 }
 .custom-slider .siema .item .person {
   display: grid;
