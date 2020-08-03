@@ -18,7 +18,7 @@ footer.site-footer .site-info a {
 footer.site-footer .footer-flex-container {
   padding: 80px 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 4fr 7fr;
   grid-gap: 0 26px;
 }
 @media (max-width: 992px) {
@@ -46,7 +46,7 @@ footer.site-footer .footer-navigation .menu-footer-container ul.menu {
   margin: 0;
   list-style: none;
   justify-content: space-between;
-  width: 500px;
+  width: 580px;
 }
 @media (max-width: 992px) {
   footer.site-footer .footer-navigation .menu-footer-container ul.menu {
@@ -63,14 +63,13 @@ footer.site-footer .footer-navigation .menu-footer-container ul.menu > li > a {
   cursor: default;
   pointer-events: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 12px;
   display: block;
 }
 @media (max-width: 992px) {
   footer.site-footer .footer-navigation .menu-footer-container ul.menu > li > a {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     padding: 0 10px 5px 10px;
   }
 }
@@ -97,7 +96,6 @@ footer.site-footer .footer-navigation ul.sub-menu > li:not(:last-child) {
 @media (max-width: 992px) {
   footer.site-footer .footer-navigation ul.sub-menu > li a {
     padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
   }
 }
