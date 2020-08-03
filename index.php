@@ -26,7 +26,6 @@ get_header();
 				<div class="col-md-6 col-xs-12">
 					<h1 class="title">TalkingPoints blog</h1>
 					<p class="text">Learn how teachers are using TalkingPoints to connect with families outside the classroom, across language barriers, and much more. </p>
-					<a href="#" class="btn btn-primary btn-rounded btn-uppercased">Contact us</a>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<img class="img-fluid" src="<?php echo $src ?>" alt="News">
