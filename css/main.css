@@ -605,7 +605,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 240px;
+  height: 270px;
   margin: 0 15px;
   padding: 24px;
 }
@@ -630,7 +630,7 @@ body {
   color: #616161;
   flex-grow: 1;
   overflow-y: auto;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .custom-slider .siema .item .read-more {
   font-style: normal;
