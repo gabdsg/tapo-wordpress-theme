@@ -1092,3 +1092,8 @@ body {
   color: #429BD7;
   background: none !important;
 }
+@media (max-width: 767px) {
+  .td-content {
+    justify-content: left !important;
+  }
+}
