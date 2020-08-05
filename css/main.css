@@ -571,12 +571,14 @@ body {
 }
 @media (max-width: 768px) {
   .custom-slider .header h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .custom-slider .header .actions {
-  flex-grow: 0;
-  width: 110px;
+  flex: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
 }
 .custom-slider .header .slider-button {
   display: inline-flex;
@@ -592,6 +594,9 @@ body {
   color: white;
   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.16);
   border-radius: 100px;
+}
+.custom-slider .header .slider-button:first-child {
+  margin-right: 8px;
 }
 .custom-slider .header .slider-button:hover {
   background: #3678AF;
