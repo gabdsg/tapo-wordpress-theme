@@ -569,6 +569,15 @@ body {
   color: #080808;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .custom-slider .header h3 {
+    font-size: 26px;
+  }
+}
+.custom-slider .header .actions {
+  flex-grow: 0;
+  width: 110px;
+}
 .custom-slider .header .slider-button {
   display: inline-flex;
   align-items: center;
