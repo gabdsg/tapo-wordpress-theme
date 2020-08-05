@@ -83,6 +83,7 @@ footer.site-footer .footer-navigation .menu-footer-container ul.menu a {
   }
   footer.site-footer .footer-navigation .menu-footer-container ul.menu > li {
     padding: 0;
+    margin-bottom: 32px;
   }
 }
 footer.site-footer .footer-navigation ul.sub-menu {
