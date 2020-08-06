@@ -945,6 +945,11 @@ body {
   width: 50%;
   flex: 1;
 }
+@media (max-width: 768px) {
+  .archive-container .post-item .post-info {
+    padding: 0 20px;
+  }
+}
 @media (max-width: 800px) {
   .archive-container .post-item .post-info {
     width: 100%;
@@ -966,6 +971,11 @@ body {
   line-height: 2rem;
   margin: 0 0 10px 0;
 }
+@media (max-width: 768px) {
+  .archive-container .post-item .post-info p {
+    line-height: 1.3rem;
+  }
+}
 .archive-container .post-item .post-info .posted-on {
   font-size: 14px;
   font-style: italic;
@@ -976,7 +986,7 @@ body {
 @media screen and (max-width: 992px) {
   .archive-container .post-item {
     flex-direction: column;
-    height: 462px;
+    height: 480px;
   }
   .archive-container .post-item .thumbnail-container {
     width: 100%;
@@ -991,7 +1001,7 @@ body {
 }
 .archive-container > :not(:first-child) .post-item {
   flex-direction: column;
-  height: 462px;
+  height: 480px;
 }
 .archive-container > :not(:first-child) .post-item .thumbnail-container {
   width: 100%;
