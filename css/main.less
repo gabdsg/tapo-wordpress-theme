@@ -468,12 +468,6 @@ body {
       .content {
         display: grid;
 		grid-template-columns: 5fr 3fr;
-		
-		@media screen and (max-width: 768px) {
-			grid-template-columns: 5fr 0fr;
-			padding: 50px 24px;
-		}
-
         grid-template-rows: auto auto auto 1fr;
         gap: 0 0;
         grid-template-areas: "text image" "name image" "role image" "actions image";
@@ -487,7 +481,13 @@ body {
         margin: 0 15px;
 
         padding: 60px;
-        position: relative;
+		position: relative;
+		
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 5fr 0fr;
+			padding: 50px 24px;
+			height: 544px;
+		}
       }
 
       .quote-icon {
@@ -536,7 +536,8 @@ body {
       .actions {
         grid-area: actions;
         display: flex;
-        align-items: flex-end;
+		align-items: flex-end;
+		padding-top: 8px;
 
         .slider-button {
           display: inline-flex;

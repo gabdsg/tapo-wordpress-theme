@@ -732,6 +732,7 @@ body {
   .quotes-carousel .siema .item .content {
     grid-template-columns: 5fr 0fr;
     padding: 50px 24px;
+    height: 544px;
   }
 }
 .quotes-carousel .siema .item .quote-icon {
@@ -774,6 +775,7 @@ body {
   grid-area: actions;
   display: flex;
   align-items: flex-end;
+  padding-top: 8px;
 }
 .quotes-carousel .siema .item .actions .slider-button {
   display: inline-flex;
