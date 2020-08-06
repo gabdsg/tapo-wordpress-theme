@@ -1001,7 +1001,7 @@ body {
 }
 .archive-container > :not(:first-child) .post-item {
   flex-direction: column;
-  height: 480px;
+  height: 462px;
 }
 .archive-container > :not(:first-child) .post-item .thumbnail-container {
   width: 100%;
