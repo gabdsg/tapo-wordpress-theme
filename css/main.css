@@ -728,6 +728,11 @@ body {
   padding: 60px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .quotes-carousel .siema .item .content {
+    grid-template-columns: 5fr 0fr;
+  }
+}
 .quotes-carousel .siema .item .quote-icon {
   position: absolute;
   top: -30px;
