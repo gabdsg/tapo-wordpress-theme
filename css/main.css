@@ -1005,7 +1005,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .archive-container > :not(:first-child) .post-item {
-    height: 480px;
+    height: 482px;
   }
 }
 .archive-container > :not(:first-child) .post-item .thumbnail-container {
