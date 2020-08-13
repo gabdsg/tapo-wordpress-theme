@@ -19,7 +19,7 @@
 
 	<?php wp_head(); ?>
 	
-	<script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clamp-js/0.7.0/clamp.min.js"></script>
 	
 	<script>
