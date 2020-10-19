@@ -14,14 +14,17 @@
 
 	<!-- SINGLE POST -->
 	<?php if ( is_singular() ) : ?>
-		<div class="container">
-			<header class="entry-header">
+		
+		<header class="entry-header">
+			<div class="container">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</header><!-- .entry-header -->
+				<?php talkingpoints_post_thumbnail(); ?>
+			</div>
+		</header>
+
+		<div class="container">
 
 			<div class="entry-content">
-				<?php talkingpoints_post_thumbnail(); ?>
-
 				<?php the_content(); ?>
 			</div>			
 		</div>
