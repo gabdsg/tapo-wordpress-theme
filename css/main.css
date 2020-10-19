@@ -1026,7 +1026,7 @@ body {
 }
 .recent-posts .post-item {
   flex-direction: column;
-  height: 476px;
+  height: 412px;
 }
 .recent-posts .post-item .thumbnail-container {
   width: 100%;

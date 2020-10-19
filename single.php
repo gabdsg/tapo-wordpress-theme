@@ -59,7 +59,7 @@ get_header();
 												?>
 											</p>
 											
-											<p><?php echo $recent["post_excerpt"]; ?></p>
+											<p><?php echo get_the_excerpt($recent["ID"]); /*$recent["post_excerpt"];*/ ?></p>
 									
 										</div>
 
@@ -86,6 +86,17 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<script>
+	document.querySelectorAll(".post-info h4").forEach((e)=>{
+		$clamp(e, {clamp: 2});
+	});
+
+	document.querySelectorAll(".post-info p").forEach((e)=>{
+		$clamp(e, {clamp: 3});
+	});
+	
+</script>
 
 <?php
 //get_sidebar();
