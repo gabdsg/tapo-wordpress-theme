@@ -23,10 +23,12 @@ get_header();
 
 
 			<?php if (get_post_type() == 'post'): ?>
-				<div class="recent-posts">
+				<div class="recent-posts ">	
+
 					<div class="container">
 						<h4 class="title">Recent Posts</h4>
-						<div class="recent-posts-container row">
+						<div class="archive-container">
+						
 							<?php
 								$catId = get_the_category()[0]->term_id;
 								$args = array( 
@@ -37,20 +39,36 @@ get_header();
 								);
 								$recent_posts = wp_get_recent_posts($args);
 								foreach( $recent_posts as $recent ): ?>
-									<div class="recent-post-item col-lg-6">
-										<a href="<?php echo get_permalink($recent["ID"]); ?>">
+									<div class="post-item">
 										
-											<?php echo get_the_post_thumbnail($recent["ID"], "medium"); ?>
-											
-											<div class="post-info">
-												<h4><?php echo $recent["post_title"]; ?></h4>		
-												<p><?php echo $recent["post_excerpt"]; ?></p>
+										<a class="thumbnail-container" href="<?php echo get_permalink($recent["ID"]); ?>">
+											<div class="thumbnail">
+												<?php echo get_the_post_thumbnail($recent["ID"], "medium"); ?>
 											</div>
 										</a>
+										
+										<div class="post-info">
+											<a href="<?php echo get_permalink($recent["ID"]); ?>">
+												<h4><?php echo $recent["post_title"]; ?></h4>
+											</a>
+
+											<p class="date">
+												<?php 
+													$date = date_create($recent["post_date"]);
+													echo date_format($date, 'F j, Y'); 
+												?>
+											</p>
+											
+											<p><?php echo $recent["post_excerpt"]; ?></p>
+									
+										</div>
+
+							
 									</div>
 								<?php endforeach;
 								wp_reset_query();
 							?>
+					
 						</div>
 					</div>
 				</div>
